@@ -103,15 +103,15 @@ nav .container {
 .nav-list {
     flex-basis: 50%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: center; /* Centers items vertically */
 }
 
 .list-item {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
-    transition: opacity 300ms ease;
+  
 }
 
 .list-item:hover {
@@ -119,7 +119,7 @@ nav .container {
 }
 
 .contact {
-    background-color: #505050;
+    background-color: #8b0000;
     padding: 0.5rem 0.8rem;
     border-radius: 5px;
 }
@@ -133,11 +133,12 @@ nav .container {
 .header {
     width: 100%;
     max-width: 1980px;
-    background-image: url(./images/banner1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/banner1.png);
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
     z-index: 2;
 
 }
@@ -184,7 +185,7 @@ nav .container {
 
 .cta {
     width: 200px;
-    background-color: #505050;
+    background-color: #870505;
     color: #fff;
     text-align: center;
     padding: 0.8rem 1rem;
@@ -238,7 +239,7 @@ form .container {
     flex-basis: 15%;
     border-radius: 5px;
     cursor: pointer;
-    transition: opacity 300ms;
+    
 
 }
 
@@ -286,7 +287,7 @@ form .container {
     justify-content: center;
     align-items: center;
     min-height: 20px;
-    transition: color 300ms;
+   
 }
 
 .product-btn:hover {
@@ -325,7 +326,7 @@ form .container {
 .product-img {
     flex-basis: 100%;
     object-fit: cover;
-    transition:  300ms ease;
+
 }
 
 .card-info {
@@ -383,7 +384,7 @@ form .container {
 
 .booking-btn {
     color: #fff;
-    background-color: #505050;
+    background-color: black;
     flex-basis: 50%;
     padding: 0.5rem 0.5rem;
     text-align: center;
@@ -391,5 +392,115 @@ form .container {
     border-radius: 5px;
 }
 
+.booking-btn:hover {
+    background-color: #8b0000;
+}
+
 
 /* product  */
+
+/* Image Gallery */
+/* Image Gallery */
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.image-item {
+    text-align: center;
+    max-width: 300px; /* Keeps each image within a set width */
+    margin: 0 1rem; /* Adds space between items */
+    border: 2px solid black; /* Adds a frame around the images */
+    border-radius: 8px;
+    padding: 10px; /* Adds space between the image and its border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images fit in the box without distortion */
+    border-radius: 8px;
+   
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+/* Image Description */
+.image-description {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    padding: 0 2rem; /* Adds margin on both sides of the text */
+    color: #333;
+    text-align: justify; /* Makes the text aligned properly */
+}
+
+.image-description ul {
+    padding-left: 20px;
+}
+
+.image-description ul li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc; /* Adds bullets to the list */
+}
+
+/* Call to Action Button */
+.call-to-action {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+.cta-btn:hover {
+    background-color: black;;
+}
+
+
+.product-card {
+    position: relative; /* Necessary for absolute positioning of the tag */
+}
+
+.tag {
+    position: absolute; /* Position it absolutely within the .product-card */
+    top: 10px; /* Adjust the position from the top of the image */
+    left: 10px; /* Adjust the position from the left of the image */
+    background-color: red; /* Red background */
+    color: white; /* White text color */
+    padding: 5px 10px; /* Padding for the tag */
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px; /* Rounded corners */
+    z-index: 10; /* Ensure it stays on top of the image */
+}
+
+.highlight-text {
+    font-size: 1.8rem;
+   
+    color: white;
+    background-color: #8b0000; /* Highlight color */
+    padding: 12px 20px;
+    text-align: left;
+    border-radius: 8px;
+    margin: 20px 0; /* Removes auto centering */
+    width: fit-content;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
